@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="widget-container">
+        <!-- Task Automation Status Widget -->
+        <div class="widget task-status">
+            <h2>Task Automation Status</h2>
+            <div class="status-bar">
+                <div class="progress"></div>
+            </div>
+            <p>Next Task Execution: <span class="next-task-time">5h 30m</span></p>
+            <div class="task-actions">
+                <button>Pause</button>
+                <button>Edit Workflow</button>
+                <button>View Details</button>
+            </div>
+        </div>
+    
+        <!-- Pending Approvals Widget -->
+        <div class="widget pending-approvals">
+            <h2>Pending Approvals</h2>
+            <ul class="approval-list">
+                <li>
+                    Item 1 - <span class="status-icon pending">Pending</span>
+                    <button class="approve">Approve</button>
+                    <button class="reject">Reject</button>
+                </li>
+                <li>
+                    Item 2 - <span class="status-icon approved">Approved</span>
+                    <button class="approve">Approve</button>
+                    <button class="reject">Reject</button>
+                </li>
+                <li>
+                    Item 3 - <span class="status-icon rejected">Rejected</span>
+                    <button class="approve">Approve</button>
+                    <button class="reject">Reject</button>
+                </li>
+            </ul>
+            <button class="view-all">View All</button>
+        </div>
+    
+        <!-- Financial Overview Widget -->
+        <div class="widget financial-overview">
+            <h2>Financial Overview</h2>
+            <div class="chart">
+                <!-- Bar chart would be integrated here -->
+            </div>
+            <div class="quick-stats">
+                <p>Total Income: $5000</p>
+                <p>Total Expenses: $3000</p>
+                <p>Pending Invoices: 5</p>
+            </div>
+            <a href="#">View Financial Reports</a>
+        </div>
+    
+        <!-- Registry Updates Widget -->
+        <div class="widget registry-updates">
+            <h2>Registry Updates</h2>
+            <ul class="document-alerts">
+                <li>Document A - Expires in 5 days</li>
+                <li>Document B - Expires in 10 days</li>
+                <li>Document C - Expired</li>
+            </ul>
+            <p>Total Documents: 15</p>
+            <button>Update Registry</button>
+            <button>Add New Entry</button>
+        </div>
+    
+        <!-- Activity Feed Widget -->
+        <div class="widget activity-feed">
+            <h2>Activity Feed</h2>
+            <ul class="activity-timeline">
+                <li>Task Automation started</li>
+                <li>Approval of Document X</li>
+                <li>Invoice Y marked as paid</li>
+            </ul>
+            <div class="filter-actions">
+                <button>Filter by Automation</button>
+                <button>Filter by Approvals</button>
+                <button>Filter by Financials</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>    

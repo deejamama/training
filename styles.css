@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.widget-container {
+    display: grid;
+    grid-template-areas: 
+        "task-status pending-approvals financial-overview"
+        "registry-updates activity-feed activity-feed";
+    gap: 20px;
+    padding: 20px;
+}
+
+.widget {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.task-status {
+    grid-area: task-status;
+}
+
+.pending-approvals {
+    grid-area: pending-approvals;
+}
+
+.financial-overview {
+    grid-area: financial-overview;
+}
+
+.registry-updates {
+    grid-area: registry-updates;
+}
+
+.activity-feed {
+    grid-area: activity-feed;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.status-bar {
+    background-color: #eee;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress {
+    width: 50%; /* Adjust percentage based on task completion */
+    background-color: #4caf50;
+    height: 100%;
+}
+
+.task-actions button,
+.view-all,
+.quick-stats button,
+.filter-actions button {
+    margin: 5px 0;
+    padding: 8px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-actions button:hover,
+.view-all:hover,
+.filter-actions button:hover {
+    background-color: #0056b3;
+}
+
+.status-icon {
+    padding: 3px 8px;
+    border-radius: 4px;
+    color: white;
+}
+
+.pending { background-color: orange; }
+.approved { background-color: green; }
+.rejected { background-color: red; }
+
+.approval-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.approval-list li {
+    margin-bottom: 10px;
+}
+
+.chart {
+    height: 150px;
+    background-color: #eee;
+    margin-bottom: 10px;
+    /* Placeholder for chart */
+}
+
+.quick-stats p {
+    margin: 5px 0;
+}
+
+.document-alerts {
+    list-style: none;
+    padding: 0;
+}
+
+.activity-timeline {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.filter-actions {
+    margin-top: 10px;
+}
+
